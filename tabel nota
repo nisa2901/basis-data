@@ -1,0 +1,7 @@
+CREATE TABLE Nota (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Jumlah DECIMAL(10,2),
+    B_ID INT,
+    P_ID INT,
+    FOREIGN KEY (P_ID) REFERENCES Pasien(id)
+);
